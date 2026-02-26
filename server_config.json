@@ -1,0 +1,1 @@
+{"serverConfig": "{\"mcpServers\":{\"brewmytech-grok-mcp\":{\"command\":\"npx\",\"args\":[\"-y\",\"@iflow-mcp/brewmytech-grok-mcp\"],\"env\":{\"GROK_API_KEY\":\"${GROK_API_KEY}\"},\"values\":{\"GROK_API_KEY\":{\"type\":\"string\",\"title\":\"API密钥\",\"description\":\"从https://x.ai获取Grok API密钥\",\"default\":\"sk-test\"}}}}}"}

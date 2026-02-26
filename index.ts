@@ -150,10 +150,15 @@ server.addTool({
 });
 
 async function startServer() {
-  await server.start({
-    transportType: "stdio",
-  });
-  console.error("Grok MCP Server running on stdio");
+  try {
+    await server.start({
+      transportType: "stdio",
+    });
+    console.error("Grok MCP Server running on stdio");
+  } catch (error) {
+    console.error("Failed to start server:", error);
+    process.exit(1);
+  }
 }
 
 startServer().catch((error) => {
